@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+header{
+    background-color: rgb(177, 172, 254);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1336px;
+    
+}
+
+head > img{
+    width: 10%;
+}
+
+main{
+    box-sizing: border-box;
+    max-width: 1336px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    border: 2px solid rgb(240, 236, 236);
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+main > h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+     color: var(--neutral-dark-charcoal);
+}
+
+main > p{
+    font-family:'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: var(--neutral-wenge-brown);
+}
+
+main > section.preparation {
+    background-color: black;
+    border-radius: 110px;
+    padding-left: 100mm;
+    height: 110px;
+
+}
+main > section.preparation > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--primary-dark-raspberry);
+    margin-bottom: 1em;
+  }
+  main > section.preparation > ul > li {
+    position: relative;
+    margin-left: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--neutral-wenge-brown);
+    line-height: 2em;
+    list-style: disc;
+  }
+    
+  main > section.preparation > ul > li::marker {
+    color: var(--primary-dark-raspberry);
+  }
+  main > section.preparation > ul > li > strong {
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--neutral-wenge-brown);
+  }
+    
+  main > section.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--neutral-light-grey);
+  }
+
+  .contanier > section.preparation{
+    background-color: #F9F6E6;
+  }
+
+  body{
+    background-color: #F9F6E6;
+  }
+  
+  main > .contanier{
+    padding-left: 8mm;
+    padding-right: 8mm;
+  }
+
+  main > section.ingredients > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--primary-nutmeg);
+  }
+
+  table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+
+  }
+
+  img{
+    border-radius: 50px;
+    margin-top: 50px;
+  }
+
+  th{
+    background-color: #f5e1ef;
+    font-weight: bold;
+  }
+ 
+  th, td{
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+}
