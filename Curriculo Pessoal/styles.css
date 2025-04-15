@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Gradiente suave no fundo */
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #007BFF, #00C4FF); /* Gradiente no cabeçalho */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin: -30px -30px 20px -30px; /* Expande o cabeçalho */;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+    
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+header a {
+    color: #111010;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.objetivo  {
+    padding-left: 30px;
+}
+
+.formacao {
+    padding-left: 30px;
+}
+
+.competencias {
+    padding-left: 30px;
+}
+
+.experiencia {
+    padding-left: 30px;
+}
+
+.certificados {
+    padding-left: 30px;
+}
+
+.idiomas {
+    padding-left: 30px;
+} 
+
