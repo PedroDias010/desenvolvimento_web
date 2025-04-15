@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+ /* remove a margem padrão para controlar melhor no css */
+  body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+body{
+  min-height: 100svh;
+  line-height: 1.5;
+  padding: 1rem;
+  padding-left: 113mm;
+  padding-right: 113mm;
+  margin-bottom: 40px;
+  
+}
+
+body{
+  font-family:"Roboto", sans-serif;
+  background-color:black;
+ 
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+  .card{
+    width: 25rem; 
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+  }
+
+
+  .card-top{
+    line-height: normal;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 40%;
+}
+
+.footer{
+  display: none;
+}
+
+.card{
+  max-width: 20rem;
+}
+  
+img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit:cover;
+
+}
+  
+  img,picture{
+    max-width: 100%;
+  display: block;
+  }
+
+  .contanier{
+    width: 100%;
+  background-color:#1E201E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  p{
+    font-size: small;
+    color: white;
+  }
+
+  h2{
+    margin: 0;
+    padding: 0;
+    color: #D2FF72;
+    font-size: small;
+    font-weight: var(--mid);
+  }
+
+  ul{
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    padding: .5rem;;
+    color: white;
+    
+  }
+
+  button{
+    background-color:#3C3D37;
+    padding: .8em;
+    border-radius: .5em;
+    margin-top: .7em;
+    margin-bottom: .5em;
+    cursor: pointer;
+    font-weight: var(--mid);
+    transition: all 500ms;
+    color: white;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 200%;
+    color: white;
+    font-family: "Roboto", Bold;
+  }
+
+ a{
+  color: white;
+  text-decoration: none;
+ }
+
+ 
+
