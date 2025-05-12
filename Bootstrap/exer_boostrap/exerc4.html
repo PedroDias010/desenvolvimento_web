@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="mb-1 mx-auto mt-5 " >
+        <form class="row g-3">
+            <div class="col-md-5">
+              <label for="inputEmail4" style="margin-left: 7rem;" class="form-label active">Email</label>
+              <input type="email" class="form-control is-invalid" style="margin-left: 7rem;" id="inputEmail4">
+            </div>
+            <div class="col-md-5">
+              <label for="inputPassword4" style="margin-left: 7rem;" class="form-label active">Senha</label>
+              <input type="password" class="form-control is-invalid" style="margin-left: 7rem;" id="inputPassword4">
+            </div>
+            <div class="col-md-5">
+              <label for="inputCity" style="margin-left: 7rem;" class="form-label">Cidade</label>
+              <input type="text" class="form-control is-valid" style="margin-left: 7rem;" id="inputCity">
+            </div>
+            <div class="col-md-5">
+              <label for="inputState" style="margin-left: 7rem;" class="form-label">Status</label>
+              <select id="inputState" style="margin-left: 7rem;" class="form-select">
+                <option selected>Solteiro</option>
+                <option selected>Casado</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" style="margin-left: 5.5rem;" type="checkbox" id="gridCheck">
+                <label class="form-check-label" style="margin-left: 0.5rem;" for="gridCheck">Conferir</label>
+              </div>
+            </div>
+            <div class="col-12">
+                <button type="button" style="margin-left: 7rem;" class="btn btn-success">Success</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    
