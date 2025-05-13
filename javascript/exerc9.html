@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contar vogais de uma palavra</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      input {
+        margin: 10px;
+        padding: 8px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      #resultado {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contar vogais de uma palavra</h2>
+        <div>
+            <label for="palavra">Digite uma palavra:</label>
+            <input type="text" id="palavra" placeholder="Digite uma palavra" />
+        </div>
+        <div>
+            <button onclick="ContarVogais()">Contar Vogais</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script>
+      function ContarVogais() {
+        let palavra = document.getElementById("palavra").value;
+        let vogais = "aeiouAEIOU";
+        let contador = 0;
+
+        for (let i = 0; i < palavra.length; i++) {
+          if (vogais.includes(palavra[i])) {
+            contador++;
+          }
+        }
+
+        document.getElementById("resultado").innerText =
+          "Número de vogais: " + contador;
+      }
+    </script>
+  </body>
+</html>

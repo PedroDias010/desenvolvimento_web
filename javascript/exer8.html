@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci até N termos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      input {
+        margin: 10px;
+        padding: 8px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      #resultado {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Fibonacci até N termos</h2>
+      <div>
+        <label for="termos">Digite o número de termos:</label>
+        <input type="number" id="termos" placeholder="Digite o número de termos" />
+      </div>
+    </div>
+    <div>
+        <button onclick="Fibonacci()">Calcular Fibonacci</button>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        function Fibonacci() {
+            let termos = parseInt(document.getElementById("termos").value);
+
+            // Validação de entrada
+            if (isNaN(termos) || termos <= 0) {
+                document.getElementById("resultado").innerHTML = "Por favor, insira um número válido maior que 0.";
+                return;
+            }
+
+            let fib = [0, 1];
+
+            // Geração da sequência de Fibonacci
+
+            for (let i = 2; i < termos; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+
+            // Ajuste para termos menores que 2
+
+            if (termos === 1) {
+                fib = [0];
+            }
+
+            document.getElementById("resultado").innerHTML = "Fibonacci: " + fib.join(", ");
+        }
+    </script>
+    
+  </body>
+</html>

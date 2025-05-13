@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverter uma string</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inverter uma palavra</h2>
+        <div>
+            <label for="texto">Digite uma string</label>
+            <input type="text" id="texto" placeholder="Por favor, digite uma palavfa"></input>           
+        </div>
+        <button onclick="inverterstring()">Inverter</button>
+        <div id=resultado></div>
+    </div>
+    <script>
+        function inverterstring() {
+        // Obtém o valor do campo de entrada
+        let palavra = document.getElementById("texto").value;
+
+        // Verifica se o campo está vazio
+        if (!palavra) {
+            document.getElementById("resultado").innerHTML = "Por favor, digite uma palavra.";
+            return;
+        }
+
+        // Inverte a palavra
+        let palavraInvertida = palavra.split("").reverse().join("");
+
+        // Exibe o resultado
+        document.getElementById("resultado").innerHTML = `A palavra invertida é: ${palavraInvertida}`;
+    }
+    </script>
+
+    

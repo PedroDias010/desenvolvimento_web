@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar o maior número de uma lista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Encontrar o maior número de uma lista</h2>
+        <div>
+            <label for="numeros">Digite números separados por vírgula:</label>
+            <input type="text" id="numeros" placeholder="Ex: 1,2,3,4"></input>
+        </div>
+        <button onclick="encontrarMaior()">Encontrar Maior</button>
+        <div id="resultado"></div>
+    </div>
+    <script>
+         function encontrarMaior() {
+            const input = document.getElementById('numeros').value;
+            const numeros = input.split(',').map(num => parseFloat(num.trim()));
+
+            if (numeros.some(isNaN)) {
+                document.getElementById('resultado').textContent = 'Por favor, insira apenas números válidos.';
+                return;
+            }
+
+            const maior = Math.max(...numeros);
+            document.getElementById('resultado').textContent = `O maior número é: ${maior}`;
+        }
+
+    </script>
+</body>
+</html>
+
+      
+      
