@@ -1,0 +1,102 @@
+/* Card styling with modern effects and fixed size */
+.card {
+  border-radius: 1rem;
+  border: none;
+  background: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  height: 300px; /* Fixed height for uniformity */
+  width: 100%; /* Full width within parent */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title styling */
+.card-title {
+  color: #343a40;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect for card title */
+.card:hover .card-title {
+  color: #007bff;
+}
+
+/* Card text strong tag styling */
+.card-text strong {
+  color: #151517;
+  font-weight: 700;
+}
+
+/* Ensure card text is readable and styled */
+.card-text {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Allows text to fill available space */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Flexbox layout for lista-usuarios columns */
+#lista-usuarios .col-md-4 {
+  display: flex;
+  margin-bottom: 1.5rem;
+  flex: 0 0 33.333333%; /* Ensures equal column width */
+  max-width: 33.333333%;
+}
+
+/* Ensure card fills its parent column */
+#lista-usuarios .col-md-4 .card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Smooth animation for card content */
+.card > * {
+  transition: opacity 0.3s ease;
+}
+
+/* Subtle fade-in effect for card content on load */
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+    height: 250px; /* Slightly smaller height for mobile */
+  }
+  #lista-usuarios .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    align-items: center; /* Align cards vertically */
+  }
+  #lista-usuarios .col-md-4 .card {
+    max-width: 90%; /* Limit card width for better centering */
+  }
+}
